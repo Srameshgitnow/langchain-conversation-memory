@@ -41,7 +41,7 @@ Or the script will securely prompt you once at runtime.
 
 Install:
 
-```bash
+
 pip install -r requirements.txt
 
 
