@@ -43,6 +43,8 @@ Install:
 
 ```bash
 pip install -r requirements.txt
+
+
 requirements.txt
 
 nginx
@@ -52,7 +54,8 @@ langchain-openai
 python-dotenv
 openai
 
-------------------------------------
+
+------------------------------------ 
 
 🚀 Run
 python src/chat_with_memory.py
