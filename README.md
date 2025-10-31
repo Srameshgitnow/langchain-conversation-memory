@@ -6,7 +6,7 @@ A minimal, production-ready example of a **conversational AI** built with **Lang
 - Uses **Runnable** compositions (`RunnableParallel`, `RunnablePassthrough`)
 - Supports both a **custom chain** and a **drop-in ConversationChain**
 
----
+------------------------------------
 
 ## ✨ Features
 
@@ -15,13 +15,11 @@ A minimal, production-ready example of a **conversational AI** built with **Lang
 - **Dual usage:** Shows both a custom runnable pipeline **and** `ConversationChain`.
 - **Environment-safe:** Loads `OPENAI_API_KEY` from `.env` or prompts securely.
 
+------------------------------------
+
 ## 🧱 Project Structure
 
-├─
-│ └─ chat_with_memory.ipynb # main script (this file)
-├─ .env.example # env template
-├─ requirements.txt
-└─ README.md
+![alt text](image.png)
 
 
 Create a `.env` file in the repo root:
@@ -30,7 +28,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 Or the script will securely prompt you once at runtime.
 
----
+------------------------------------
 
 ## 🧰 Requirements
 
@@ -54,6 +52,15 @@ langchain-openai
 python-dotenv
 openai
 
+------------------------------------
+
+🚀 Run
+python src/chat_with_memory.py
+
+
+You should see three memory-aware answers, then a final reply from ConversationChain.
+
+------------------------------------
 
 🧪 Sample session
 User: What is LangChain?
@@ -65,6 +72,7 @@ AI: In this example we use ConversationBufferMemory to store prior messages...
 User: Can you summarize what we talked about?
 AI: We discussed what LangChain is and how memory is used to retain context...
 
+------------------------------------
 
 🛡️ Notes & Tips
 
