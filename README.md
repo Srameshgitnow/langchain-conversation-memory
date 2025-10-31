@@ -47,15 +47,12 @@ pip install -r requirements.txt
 
 requirements.txt
 
-nginx
-Copy code
 langchain
 langchain-openai
 python-dotenv
 openai
 
-
------------------------------------- 
+------------------------------------
 
 🚀 Run
 python src/chat_with_memory.py
@@ -74,6 +71,19 @@ AI: In this example we use ConversationBufferMemory to store prior messages...
 
 User: Can you summarize what we talked about?
 AI: We discussed what LangChain is and how memory is used to retain context...
+
+------------------------------------
+
+🧩 Also shown: ConversationChain
+
+The script includes a standard ConversationChain usage:
+
+conversation = ConversationChain(llm=llm, memory=memory)
+response = conversation.predict(input="What did I just ask?")
+print("AI:", response)
+
+
+This demonstrates the higher-level, batteries-included approach.
 
 ------------------------------------
 
